@@ -1,6 +1,8 @@
-<div class="wrapper" (mouseenter)="showDescription = true" (mouseleave)="showDescription = false">
-  <img [src]="item.images.thumbnail || '/assets/images/placeholder.jpg'">
-  <div class="bg-black p-2 text-white bg-opacity-75 description" *ngIf="showDescription">{{ item.description }}</div>
-  <div class="bg-black p-2 text-white bg-opacity-75 duration">{{ item.duration }}</div>
-</div>
-<p>{{ item.title }}</p>
+<a [routerLink]="['item', item.id]">
+  <div class="wrapper" (mouseenter)="showDescription = true" (mouseleave)="showDescription = false">
+    <img [src]="item.images.thumbnail || '/assets/images/placeholder.jpg'">
+    <div class="bg-black p-2 text-white bg-opacity-75 description" *ngIf="showDescription">{{ item.description }}</div>
+    <div class="bg-black p-2 text-white bg-opacity-75 duration">{{ item.duration }}</div>
+  </div>
+  <p>{{ item.title }}</p>
+</a>

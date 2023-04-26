@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CanActivateGuard } from './can-activate.guard';
+import { DetailComponent } from './detail/detail.component';
 import { ListComponent } from './list/list.component';
 
 import { LoginComponent } from './login/login.component';
@@ -19,6 +20,9 @@ const routes: Routes = [
       {
         path: '',
         component: ListComponent
+      }, {
+        path: 'item/:id',
+        component: DetailComponent
       }
     ]
   }, {

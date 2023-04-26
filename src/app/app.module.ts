@@ -13,6 +13,7 @@ import { MainComponent } from './main/main.component';
 import { ListComponent } from './list/list.component';
 import { RouterModule } from '@angular/router';
 import { TileComponent } from './tile/tile.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TileComponent } from './tile/tile.component';
     LoginComponent,
     LogoutComponent,
     ListComponent,
-    TileComponent
+    TileComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
