@@ -46,7 +46,6 @@ export class LoginComponent implements OnDestroy {
   }
 
   ngOnDestroy() {
-    // tslint:disable-next-line: no-unused-expression
     this.subs && this.subs.unsubscribe();
   }
 }

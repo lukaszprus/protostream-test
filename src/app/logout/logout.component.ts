@@ -16,7 +16,6 @@ export class LogoutComponent implements OnInit, OnDestroy {
   constructor(private authService: AuthService, private router: Router) {}
 
   logout() {
-    // tslint:disable-next-line: no-unused-expression
     this.subs && this.subs.unsubscribe();
 
     this.subs = this.authService.logout()
@@ -32,7 +31,6 @@ export class LogoutComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    // tslint:disable-next-line: no-unused-expression
     this.subs && this.subs.unsubscribe();
   }
 }

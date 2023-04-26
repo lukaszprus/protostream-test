@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-detail',
-  template: '<p>{{ id }}</p>'
+  template: '<div class="container text-center">{{ id }}</div>'
 })
 export class DetailComponent {
   id: any;

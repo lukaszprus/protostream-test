@@ -50,7 +50,6 @@ export class ListComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    // tslint:disable-next-line: no-unused-expression
     this.subs && this.subs.unsubscribe();
   }
 }
