@@ -10,4 +10,5 @@ import { TransformedItem } from '../list/list.component';
 export class TileComponent {
   @Input() item!: TransformedItem;
   showDescription = false;
+  imagePlaceholder = '/assets/images/placeholder.jpg';
 }
